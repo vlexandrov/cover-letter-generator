@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cover Letter Tool</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Cover Letter Tool</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cover Letter Tool</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Cover Letter Tool</h1>
+        </header>
 
-    <main>
-        <section>
-            <p>Welcome to the Cover Letter Tool! This simple webpage helps you create customized cover letters for your job applications.</p>
-            <form>
-                <label for="companyName">Company Name:</label>
-                <input type="text" id="companyName" name="companyName"><br><br>
-                <label for="companyAddress">Company Address:</label>
-                <input type="text" id="companyAddress" name="companyAddress"><br><br>
-                <label for="jobRole">Role:</label>
-                <input type="text" id="jobRole" name="jobRole"><br><br>
-                <label for="jobListingPage">Job Listing Page:</label>
-                <input type="text" id="jobListingPage" name="jobListingPage"><br><br>
-                
-                <div class="date-container">
-                    <button type="button" id="todayButton">Today</button>
-                    <input type="number" id="day" name="day" min="1" max="31">
-                    <input type="number" id="month" name="month" min="1" max="12">
-                    <input type="number" id="year" name="year">
-                </div>
-            </form>
-        </section>
+        <main>
+            <section>
+                <p>Welcome to the Cover Letter Tool! This simple webpage helps you create customized cover letters for your job applications.</p>
+                <form>
+                    <label for="companyName">Company Name:</label>
+                    <input type="text" id="companyName" name="companyName"><br><br>
+                    <label for="companyAddress">Company Address:</label>
+                    <input type="text" id="companyAddress" name="companyAddress"><br><br>
+                    <label for="jobRole">Role:</label>
+                    <input type="text" id="jobRole" name="jobRole"><br><br>
+                    <label for="jobListingPage">Job Listing Page:</label>
+                    <input type="text" id="jobListingPage" name="jobListingPage"><br><br>
+                    
+                    <div class="date-container">
+                        <button type="button" id="todayButton">Today</button>
+                        <input type="number" id="day" name="day" min="1" max="31">
+                        <input type="number" id="month" name="month" min="1" max="12">
+                        <input type="number" id="year" name="year">
+                    </div>
+                </form>
+            </section>
 
-        <section>
-            <button type="button" id="generateButton">Generate Cover Letter Template</button>
-            <button type="button" id="copyButton">Copy to Clipboard</button><br><br>
-            <textarea id="coverLetterOutput" style="width: calc(100% - 25px); height: auto;" readonly>
-            </textarea>
-        </section>
-    </main>
+            <section>
+                <button type="button" id="generateButton">Generate Cover Letter Template</button>
+                <button type="button" id="copyButton">Copy to Clipboard</button><br><br>
+                <textarea id="coverLetterOutput" style="width: calc(100% - 25px); height: auto;" readonly>
+                </textarea>
+            </section>
+        </main>
 
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 
-</body>
+    </body>
 </html>
